@@ -6,9 +6,9 @@ Output is a Google Data Studio report, providing insight into the Data Engineeri
 
 ## Motivation
 
-Project was based on an interest in Data Engineering and the types of Q&A found on the official subreddit. 
+The project was based on an interest in Data Engineering and the types of Q&A found on the official subreddit. 
 
-It also provided a good opportunity to develop skills and experience in a range of tools. As such, project is more complex than required, utilising dbt, airflow, docker and cloud based storage.
+It also provided a good opportunity to develop skills and experience in various tools. The project is more complex than required, utilising dbt, airflow, docker, and cloud based storage.
 
 ## Architecture
 
@@ -24,23 +24,21 @@ It also provided a good opportunity to develop skills and experience in a range 
 
 ## Output
 
-[<img src="https://github.com/ABZ-Aaron/Reddit-API-Pipeline/blob/master/images/GDS-Dashboard.png" width=70% height=70%>](https://datastudio.google.com/reporting/e927fef6-b605-421c-ae29-89a66e11ea18)
-
-* Final output from Google Data Studio. Link [here](https://datastudio.google.com/reporting/e927fef6-b605-421c-ae29-89a66e11ea18). Note that Dashboard is reading from a static CSV output from Redshift. Redshift database was deleted so as not to incur cost.
+Note that the Dashboard is reading from a static CSV output from Redshift. The Redshift database was deleted so as not to incur costs.
 
 ## Setup
 
-Follow below steps to setup pipeline. I've tried to explain steps where I can. Feel free to make improvements/changes. 
+Follow the below steps to set up the pipeline. I've tried to explain the steps where I can. Feel free to make improvements/changes. 
 
 > **NOTE**: This was developed using an M1 Macbook Pro. If you're on Windows or Linux, you may need to amend certain components if issues are encountered.
 
-As AWS offer a free tier, this shouldn't cost you anything unless you amend the pipeline to extract large amounts of data, or keep infrastructure running for 2+ months. However, please check [AWS free tier](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all) limits, as this may change.
+As AWS offers a free tier, this shouldn't cost you anything unless you amend the pipeline to extract large amounts of data or keep the infrastructure running for 2+ months. However, please check [AWS free tier](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all) limits, as this may change.
 
-First clone the repository into your home directory and follow the steps.
+First, you can clone the repository into your home directory and follow the steps.
 
   ```bash
-  git clone https://github.com/ABZ-Aaron/Reddit-API-Pipeline.git
-  cd Reddit-API-Pipeline
+  git clone https://github.com/jrdegbe/Reddit-ETL-Pipeline.git
+  cd Reddit-ETL-Pipeline
   ```
 
 1. [Overview](instructions/overview.md)
